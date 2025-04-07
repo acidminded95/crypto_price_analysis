@@ -45,16 +45,11 @@ This project provides an automated solution for analyzing cryptocurrency price b
    ```bash
    python src/main.py
    ```
-   This will collect data for Bitcoin and Ethereum by default. You can modify the list of coins in `src/main.py`.
+   This will collect data for Bitcoin by default. You can modify the list of coins in `src/main.py`.
 
 2. Launch the Streamlit dashboard:
    ```bash
    streamlit run src/app.py
-   ```
-
-3. Run tests:
-   ```bash
-   pytest tests/
    ```
 
 ## Project Structure
@@ -64,15 +59,12 @@ This project provides an automated solution for analyzing cryptocurrency price b
 ├── README.md
 ├── requirements.txt
 ├── .env
-├── src/
-│   ├── main.py           # Main script for data collection and processing
-│   ├── app.py           # Streamlit dashboard application
-│   ├── data_collector.py # CoinGecko API interaction and data collection
-│   ├── data_processor.py # Data analysis and processing functions
-│   └── config.py        # Configuration settings
-└── tests/
-    ├── test_data_collector.py
-    └── test_data_processor.py
+└── src/
+    ├── main.py           # Main script for data collection and processing
+    ├── app.py           # Streamlit dashboard application
+    ├── data_collector.py # CoinGecko API interaction and data collection
+    ├── data_processor.py # Data analysis and processing functions
+    └── config.py        # Configuration settings
 ```
 
 ## Data Collection
@@ -126,13 +118,6 @@ The Streamlit dashboard provides:
 4. Internet connectivity for API calls
 5. Data quality from the API
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
 
 ## License
 
