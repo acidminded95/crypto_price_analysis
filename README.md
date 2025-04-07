@@ -91,6 +91,8 @@ The Streamlit dashboard provides:
 - Market insights and analysis
 - Raw data exploration
 
+![Cryptocurrency Price Analysis Dashboard](assets/visualization.png)
+
 ## Features
 
 1. Multi-Coin Support:
@@ -118,6 +120,43 @@ The Streamlit dashboard provides:
 4. Internet connectivity for API calls
 5. Data quality from the API
 
+## Scalability Plan
+
+1. Database Optimization:
+   - Implement database indexing for frequently queried columns
+   - Add connection pooling for better database resource management
+   - Consider migration to PostgreSQL for larger datasets
+   - Implement database partitioning by date ranges
+
+2. API Integration:
+   - Implement caching layer for CoinGecko API responses
+   - Add support for multiple API providers (fallback mechanism)
+   - Implement WebSocket connections for real-time price updates
+   - Add retry mechanisms
+
+3. Data Processing:
+   - Implement parallel processing for multiple cryptocurrencies
+   - Add batch processing capabilities for large datasets
+   - Implement data compression for historical data storage
+   - Add support for custom time ranges and granularity
+
+4. Application Architecture:
+   - Implement microservices architecture for different components
+   - Add load balancing for the Streamlit dashboard
+   - Implement containerization using Docker
+   - Add monitoring and logging infrastructure
+
+5. Performance Optimization:
+   - Implement data pre-aggregation for common queries
+   - Add Redis caching for frequently accessed data
+   - Implement lazy loading for historical data
+
+6. Future Enhancements:
+   - Add support for custom technical indicators
+   - Implement machine learning models for price prediction
+   - Add support for portfolio tracking and management
+   - Implement automated trading strategies
+   - Add support for social sentiment analysis
 
 ## License
 
